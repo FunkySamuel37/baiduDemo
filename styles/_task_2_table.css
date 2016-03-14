@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid #c5c5c5;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+table thead tr {
+  background-color: #2F4560;
+  height: 30px;
+  color: #fff;
+}
+table thead tr th {
+  padding-left: 5px;
+}
+table thead tr th:last-of-type {
+  width: 20%;
+}
+table tr {
+  height: 25px;
+  line-height: 25px;
+}
+table tr td {
+  padding-left: 15px;
+}

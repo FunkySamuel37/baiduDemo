@@ -1,0 +1,224 @@
+.app-header {
+  height: 70px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  background-image: -webkit-linear-gradient(top, #232323 0%, #0f0f0f 100%);
+  background-image: linear-gradient(-180deg, #232323 0%, #0f0f0f 100%);
+}
+@media (min-width: 720px) {
+  .app-header {
+    width: 100%;
+  }
+}
+.app-header .logo {
+  height: 60%;
+  margin: 17px 20px;
+  width: auto;
+}
+.app-header h1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.app-header .nav-list {
+  float: right;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 28px;
+}
+@media (max-width: 720px) {
+  .app-header .nav-list {
+    display: none;
+  }
+}
+.app-header .nav-list .nav-item {
+  font-size: 14px;
+  width: 90px;
+  list-style: none;
+}
+.app-header .nav-list .nav-item a {
+  font-family: "Microsoft YaHei UI", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+table {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid #c5c5c5;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+table thead tr {
+  background-color: #2F4560;
+  height: 30px;
+  color: #fff;
+}
+table thead tr th {
+  padding-left: 5px;
+}
+table thead tr th:last-of-type {
+  width: 20%;
+}
+table tr {
+  height: 25px;
+  line-height: 25px;
+}
+table tr td {
+  padding-left: 15px;
+}
+.sidebar {
+  background-color: #fff;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 25%;
+  padding: 15px;
+}
+.sidebar h2 {
+  border-left: 4px solid #b9b9b9;
+  line-height: 2em;
+  font-size: 1em;
+}
+.sidebar .sign-up-container {
+  width: 200px;
+  margin: 0px auto;
+}
+.sidebar #sign_up_form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+.sidebar #sign_up_form input {
+  border-radius: 2px;
+  height: 20px;
+  border: 1px solid #b8b8b8;
+  background-color: #f8f8f8;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.sidebar #sign_up_form input:focus {
+  outline: none;
+}
+.sidebar #sign_up_form .helper-msg {
+  line-height: 14px;
+  color: #a8a8a8;
+}
+.sidebar #sign_up_form section {
+  font-size: 0.8em;
+}
+.sidebar .btn {
+  margin-top: 20px;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  background-color: #00002f;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+body {
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #e6e6e6;
+}
+body img {
+  width: 100%;
+}
+.app-wrap .content-wrap {
+  margin: 20px auto;
+  width: 864px;
+}
+@media (max-width: 960px) {
+  .app-wrap .content-wrap {
+    margin: 20px 5%;
+    width: 90%;
+  }
+}
+.content {
+  width: 70%;
+  float: right;
+}
+@media (max-width: 740px) {
+  .content {
+    width: auto;
+  }
+}
+.sidebar {
+  float: right;
+}
+@media (max-width: 740px) {
+  .sidebar {
+    display: none;
+  }
+}
+h2 {
+  font-family: sans-serif;
+}
+.post {
+  margin: 0px 20px;
+  background-color: #fff;
+  padding: 30px 45px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.post .post-title-main {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+.post .post-title-sub {
+  font-size: 1.3em;
+  margin: 0;
+  color: #808080;
+}
+.post .post-stuff {
+  margin: 1em 0;
+}
+.post .post-stuff span {
+  font-size: 1.25em;
+  color: #808080;
+}
+.post .paragraph {
+  text-indent: 2em;
+  line-height: 2em;
+  font-size: 1em;
+  padding: 10px 14px;
+}
+.post .first-list > li {
+  margin-bottom: 0.5em;
+  list-style: none;
+}
+.post .second-list > li {
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
+.post .media-list li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.post .media-list li p {
+  text-align: center;
+}
+.post .media-list li .card {
+  display: inline-block;
+  border: 1px solid #afafaf;
+  background-color: #e8e8e8;
+  padding: 10px;
+}
+.post .media-list li .card img {
+  width: 100px;
+  margin: 0px;
+}
+.post img {
+  margin: 15px 0px;
+}

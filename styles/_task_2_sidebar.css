@@ -1,0 +1,52 @@
+.sidebar {
+  background-color: #fff;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 25%;
+  padding: 15px;
+}
+.sidebar h2 {
+  border-left: 4px solid #b9b9b9;
+  line-height: 2em;
+  font-size: 1em;
+}
+.sidebar .sign-up-container {
+  width: 200px;
+  margin: 0px auto;
+}
+.sidebar #sign_up_form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+.sidebar #sign_up_form input {
+  border-radius: 2px;
+  height: 20px;
+  border: 1px solid #b8b8b8;
+  background-color: #f8f8f8;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.sidebar #sign_up_form input:focus {
+  outline: none;
+}
+.sidebar #sign_up_form .helper-msg {
+  line-height: 14px;
+  color: #a8a8a8;
+}
+.sidebar #sign_up_form section {
+  font-size: 0.8em;
+}
+.sidebar .btn {
+  margin-top: 20px;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  background-color: #00002f;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

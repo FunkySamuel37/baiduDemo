@@ -1,0 +1,38 @@
+.app-header {
+  height: 70px;
+  flex-shrink: 0;
+  background-image: linear-gradient(-180deg, rgba(35, 35, 35, 1) 0%, rgba(15, 15, 15, 1) 100%);
+  @media (min-width: 720px) {
+    width: 100%;
+  }
+
+  .logo {
+    height: 60%;
+    margin: 17px 20px;
+    width: auto;
+  }
+
+  h1 {
+    display: inline-flex;
+  }
+
+  .nav-list {
+    @media (max-width: 720px) {
+      display: none;
+    }
+    float: right;
+    flex-grow: 1;
+    display: flex;
+    margin-top: 28px;
+    .nav-item {
+      font-size: 14px;
+      width: 90px;
+      a {
+        font-family: "Microsoft YaHei UI", sans-serif;
+        text-decoration: none;
+        color: #fff;
+      }
+      list-style: none;
+    }
+  }
+}
