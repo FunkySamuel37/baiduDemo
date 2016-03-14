@@ -9,22 +9,22 @@ var pngquant = require('imagemin-pngquant');
 
 
 gulp.task('sass', function() {
-  gulp.src('styles/*.scss')
+  gulp.src('styles/**/*.scss')
     .pipe(sass())
     .pipe(prefix())
     .pipe(gulp.dest('../styles'));
 });
 
 gulp.task('less', function() {
-  gulp.src('styles/*.less')
+  gulp.src('styles/**/*.less')
     .pipe(less())
     .pipe(prefix())
     .pipe(gulp.dest('../styles'));
 });
 
 gulp.task('copy', function() {
-  gulp.src('*.html')
-    .pipe(gulp.dest('..'))
+  gulp.src(['./**/*.html', '!./node_modules/**/*'], { base: './' })
+    .pipe(gulp.dest('../'));
 });
 
 gulp.task('imagemin', function() {
@@ -40,7 +40,7 @@ gulp.task('imagemin', function() {
 gulp.task('watch', function() {
   gulp.watch(['*.html'], ['copy']);
   gulp.watch(['styles/*.scss', 'styles/*.less'], ['sass', 'less']);
-  gulp.watch(['asset/images/*'], ['imagemin']);
+  // gulp.watch(['asset/images/*'], ['imagemin']);
 });
 
-gulp.task('default', ['sass', 'less', 'copy', 'imagemin', 'watch']);
+gulp.task('default', ['sass', 'less', 'copy', 'watch']);// 'imagemin',
