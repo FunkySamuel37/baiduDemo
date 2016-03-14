@@ -39,7 +39,7 @@ gulp.task('imagemin', function() {
 
 gulp.task('watch', function() {
   gulp.watch(['./**/*.html', '!./node_modules/**/*'], ['copy']);
-  gulp.watch(['styles/*.scss', 'styles/*.less'], ['sass', 'less']);
+  gulp.watch(['styles/**/*.scss', 'styles/**/*.less'], ['sass', 'less']);
   // gulp.watch(['asset/images/*'], ['imagemin']);
 });
 
